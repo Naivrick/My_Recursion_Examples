@@ -5,9 +5,22 @@
 <br>
 <img src="http://pydev.ru/wp-content/uploads/2017/04/rekursiya.jpg">
 <br>
-I don't understand recursions well and decided to look into it more deeply
+
+> I don't understand recursions well and decided to look into it more deeply :hurtrealbad:
+
+---
 </p>
 
+## Я не понимаю рекурсию но хочу её понять
+буду разбираться на примере рекурсивных функций на python
+
+**Рекурсивная функция** - это функция, которая вызывает саму себя
+
+```python
+def recursive(value):
+    print(valie)
+    recursive(value + 1)
+ ```
 
 
 ---
