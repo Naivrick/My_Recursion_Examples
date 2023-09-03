@@ -1,46 +1,35 @@
-#ARCHIVE
+def sumSeriesIteration(number):
+    return sum(range(number + 1))
 
-def recursive(value):
-    print(value)
-    if value < 4:
-        recursive(value + 1)
-    print(value)
+# print(sumSeriesIteration(3)) # 6
+# print(sumSeriesIteration(2)) # 3
+# print(sumSeriesIteration(4)) # 10
 
-# recursive(1)
+def sumSeries_recursion(number):
+    if number == 0:
+        return 0
+    return number + sumSeries_recursion(number - 1)
 
-def factorial(n):
-    if n <= 0:
-        return 1
-    return n * factorial(n-1)
+# print(sumSeries_recursion(3)) # 6
+# print(sumSeries_recursion(2)) # 3
+# print(sumSeries_recursion(4)) # 10
 
-
-# print(factorial(6))
-
-
-
-F = \
-{
-    'C' : 
-    {
-        'Python' : ['main.py', 'python.ini'],
-        'Temp':'temp',
-        'Program Files': ['README.txt','text.txt','image.png', 'virus.exe'],
-        'AppData' : [],
-        'Windows95' : 
-        {
-            'System16': ['hosts','lib.dll','winrar','YandexAgent'],
-            'Uzver':['por.wtf','dot.net']
-        } ,
-    }
-}
+def sumPowerOf2(number):
+    res = 0
+    for i in range(1,number+1):
+        res = res + 2 ** i
+    return res
 
 
-def get_files(path, depth=0):
-    for f in path:
-        print(' '*depth, f)
-        if type(path[f])== dict:
-            get_files(path[f], depth+5)
-        else:
-            print(' '*(depth+5), ' '.join(path[f]))
-                  
-get_files(F)
+# print(sumPowerOf2(1)) # 2
+# print(sumPowerOf2(2)) # 6 
+# print(sumPowerOf2(3)) # 14
+
+def sumPowerOf2_recursion(number):
+    if number == 1:
+        return 2
+    return 2 ** number + sumPowerOf2_recursion(number - 1)
+
+# print(sumPowerOf2_recursion(1)) # 2
+# print(sumPowerOf2_recursion(2)) # 6 
+# print(sumPowerOf2_recursion(3)) # 14 
