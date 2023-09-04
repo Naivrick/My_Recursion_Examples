@@ -18,7 +18,7 @@ def printDisk(diskNum):
     else:
         # Рисование кольца
         diskSpace = '@' * diskNum
-        diskNumLabel = str(diskNum).rjust(2, '_')
+        diskNumLabel = str(diskNum).rjust(2, ' ')
         sys.stdout.write(emptySpace + diskSpace + diskNumLabel + diskSpace + emptySpace)
 
 def printTowers():
@@ -29,7 +29,7 @@ def printTowers():
                 printDisk(0)
             else:
                 printDisk(tower[level])
-        sys.stdout.write('n')
+        sys.stdout.write('\n')
     #Вывод на экран меток A,B,C
     empty_space = ' ' * (TOTAL_DISK)
     #print(f"{empty_space} A{empty_space}{empty_space} B{empty_space}{empty_space} C")
@@ -58,4 +58,4 @@ def solve(numberOfDisks, startTower, endTower, tempTower):
 
 # Решение
 printTowers()
-#solve(TOTAL_DISK, "A", 'B', 'C')
+solve(TOTAL_DISK, "A", 'B', 'C')
