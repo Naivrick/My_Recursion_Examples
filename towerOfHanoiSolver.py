@@ -1,7 +1,7 @@
 import sys
 
 # Создание стержней A,B,C конец списка соответствует вершине стержня
-TOTAL_DISK = 6
+TOTAL_DISK = 20
 
 # Заполнение стержня A Кольцами
 TOWERS = {'A' : list(reversed(range(1,TOTAL_DISK+1))),
