@@ -1,15 +1,9 @@
-def a():
-    spam = 'Ant'
-    print(f"spam is {spam}")
-    b()
-    print(f"spam is {spam}")
-def b():
-    spam = 'Bobcat'
-    print(f"spam is {spam}")
-    c()
-    print(f"spam is {spam}")
-def c():
-    spam = 'Coyote'
-    print(f"spam is {spam}")
+# %%
+def say(word):
+    if len(word) == 0:
+        return
+    print(word[0], end=' ')
+    say(word[1:])
 
-a()
+say("hello world")
+# %%
