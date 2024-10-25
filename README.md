@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Заброшка 😌
+
 <h1 align="center">My recursion examples</h1> 
 <p align="center">
 
